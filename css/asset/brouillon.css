@@ -1,0 +1,72 @@
+@import url("https://fonts.google.com/specimen/Lato");
+
+font{
+    font-family: "lato";
+    src: url("../font/Lato-BoldItalic.woff");
+    src: url("../font/Lato-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url("../font/Raleway-BoldItalic.woff");
+    src: url("../font/Raleway-BoldItalic.ttf") format("truetype");
+}
+
+.profile-intro{
+    background-color: #17abb3;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    flex-direction: column;
+}
+
+.contact-info p{
+    background-color: #17abb3;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px;
+    margin-top: 20px;
+}
+
+figure{
+    width: 100px;
+    height: 100px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    border-color: white;
+    border-style: solid;
+}
+
+.section .competences{
+    margin-left: 20px;
+    background-color: #17abb3;
+    display: flex;
+}
+
+.section h2{
+    color: #17abb3;
+}
+
+.footer{
+    background-color: #17abb3;   
+}
+
+.social-links{
+    
+}
+
+.identifiant:before{
+  content : "\002605";
+}
+.identifiant:after{
+  content : "\002605";
+}

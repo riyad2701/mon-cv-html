@@ -1,0 +1,193 @@
+@import url("https://fonts.google.com/specimen/Lato");
+
+font{
+    font-family: "lato";
+    src: url("../font/Lato-BoldItalic.woff");
+    src: url("../font/Lato-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url("../font/Raleway-BoldItalic.woff");
+    src: url("../font/Raleway-BoldItalic.ttf") format("truetype");
+}
+
+body{
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #17abb3;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-container{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr auto;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: #e3e3e3;
+    background-color: #17abb3;
+    grid-template-areas: "header main", "footer footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: white;
+    color: white;
+    padding: 20px;
+}
+
+.header h1{
+    font-size: 2em;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.header p:not(.contact-info p, .skill-item p){
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.profile-photo-container{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 15px;
+    border: 3px solid white;
+}
+
+.profile-photo-container img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.contact-info p{
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.contact-info i{
+    margin-right: 10px;
+}
+
+.section{
+    padding: 20px 0;
+    border-bottom: 1px #17abb3;
+}
+
+.main-content .section{
+    border-bottom: 1px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.section:last-child{
+    border-bottom: none;
+}
+
+.header h2{
+    color: #17abb3;
+    font-size: 1.2em;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+.main-content h2{
+    color: #17abb3;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #17abb3;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.skill-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.stars .fas.fa-star{
+    color: #17abb3;
+}
+
+.stars .far.fa-star{
+    color: white;
+}
+
+.header ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.header li{
+    padding-left: 1.2em;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.header li::before{
+    content: icon;
+    color: #17abb3;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+.main-content{
+    grid-area: main;
+    color: #17abb3;
+    padding-top: 20px;
+}
+
+.item{
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+
+.item .date{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    color: #17abb3;
+    font-size: 0.9em;
+}
+
+.item .title{
+    font-weight: bold;
+    margin: 0 0 2px 0;
+    color: black;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #17abb3;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.social-links i{
+    font-size: 1.5em;
+    margin-left: 10px;
+    cursor: pointer;
+}
